@@ -1,0 +1,5 @@
+/* .vitepress/theme/custom.css */
+:root {
+  --vp-font-family-base: "Open Sans", Tahoma, sans-serif; /* normal text font */
+  --vp-font-family-mono: "Google Sans Mono", monospace; /* code font */
+}
