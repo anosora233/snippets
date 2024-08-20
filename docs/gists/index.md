@@ -1,4 +1,4 @@
-# Snippets
+# Gists
 
 _`Just some snippets`_
 

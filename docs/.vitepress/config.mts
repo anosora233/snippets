@@ -2,6 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: "/snippets/",
   head: [
     ["link", { href: "/vite.svg", rel: "icon" }],
     [
@@ -25,7 +26,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
-      { text: "Snippets", link: "/snippets" },
+      { text: "Gists", link: "/gists" },
       { text: "Examples", link: "/markdown-examples" },
     ],
 
@@ -39,7 +40,7 @@ export default defineConfig({
           ],
         },
       ],
-      "/snippets/": [],
+      "/gists/": [],
     },
 
     socialLinks: [
