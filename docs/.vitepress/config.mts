@@ -4,7 +4,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   base: "/snippets/",
   head: [
-    ["link", { href: "/vite.svg", rel: "icon" }],
+    ["link", { href: "https://vitejs.dev/logo.svg", rel: "icon" }],
     [
       "link",
       {
@@ -26,7 +26,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
-      { text: "Gists", link: "/gists" },
+      { text: "Gists", link: "/gists/default" },
       { text: "Examples", link: "/markdown-examples" },
     ],
 
@@ -40,7 +40,12 @@ export default defineConfig({
           ],
         },
       ],
-      "/gists/": [],
+      "/gists/": [
+        {
+          text: "Gists",
+          items: [{ text: "Default", link: "/gists/default" }],
+        },
+      ],
     },
 
     socialLinks: [
