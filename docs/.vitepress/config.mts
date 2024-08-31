@@ -43,7 +43,10 @@ export default defineConfig({
       "/gists/": [
         {
           text: "Gists",
-          items: [{ text: "Default", link: "/gists/default" }],
+          items: [
+            { text: "Default", link: "/gists/default" },
+            { text: "Docker", link: "/gists/docker" },
+          ],
         },
       ],
     },

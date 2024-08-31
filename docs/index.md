@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Gists
-      link: /gists
+      link: /gists/default
     # - theme: brand
     #   text: Markdown Examples
     #   link: /markdown-examples
