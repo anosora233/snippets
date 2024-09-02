@@ -105,7 +105,7 @@ ip route add local 2001:ff::/64 dev lo
 ip route del local 2001:ff::/64 dev lo
 ```
 
-## ColorOS 13
+## color os 13
 
 ```zsh
 # adb shell pm unsuspend <package>
@@ -122,6 +122,8 @@ adb shell pm uninstall --user 0 com.nearme.instant.platform
 ```
 
 ## sync ssl cert
+
+_`Deprecated`_
 
 - Server Side
 
@@ -162,12 +164,11 @@ EOF
 @monthly bash /root/sync.sh
 ```
 
-## HE IPv6 as inbound
+## hurricane electric ipv6 tunnel
 
-For debian | ubuntu
+edit `/etc/network/interfaces`
 
 ```zsh
-# edit /etc/network/interfaces
  auto he6
   iface he6 inet6 v4tunnel
     address YOURS
@@ -181,11 +182,15 @@ For debian | ubuntu
     down ip -6 rule del lookup 51666
 ```
 
-## librespeed-cli
+## fish
 
-1. Installation
+```sh
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | \
+ source && fisher install jorgebucaran/fisher
 
-```zsh
-wget -O- https://github.com/librespeed/speedtest-cli/releases/download/v1.0.10/librespeed-cli_1.0.10_linux_amd64.tar.gz \
- tar xzvf - librespeed-cli
+fisher install pure-fish/pure
+
+echo "\
+bind \b backward-kill-word"\
+> ~/.config/fish/conf.d/bind.fish
 ```
